@@ -22,7 +22,7 @@
 
 ---
 
-immutlex is an immutable knowledge base for AI agents. You ingest documents (markdown with `[[wikilinks]]`, plus PDFs, CSVs, images, and any web page) and immutlex chunks, embeds, indexes, and links them into a navigable knowledge graph. Then it serves that graph back to your agent over MCP (65 tools) and to you over a CLI.
+immutlex is an immutable knowledge base for AI agents. You ingest documents (markdown with `[[wikilinks]]`, plus PDFs, CSVs, images, and any web page) and immutlex chunks, embeds, indexes, and links them into a navigable knowledge graph. Then it serves that graph back to your agent over MCP (74 tools) and to you over a CLI.
 
 It runs entirely from local models in a single self-contained binary: no cloud, no API keys, no telemetry. Everything is plain markdown in S3-compatible storage you control.
 
