@@ -48,7 +48,7 @@ Your agent can search the web but cannot build a persistent, cross-linked memory
 - **MCP server** over stdio for local agents, or HTTP for remote agents. Any MCP-speaking agent (Claude, Codex, Copilot, Cursor) gets retrieval, graph traversal, and auto-injected context as native tools.
 - **CLI** for scriptable access from any shell or pipeline.
 - **Desktop app** with a 3D graph visualization, markdown editor, and live event feed.
-- **Web viewer** (a thin client that talks to a daemon on your own hardware, so the knowledge base never leaves your machine): https://npiesco.github.io/immutlex/
+- **Web viewer** (a thin client that talks to a daemon on your own hardware, so the knowledge base never leaves your machine): https://viewer.immutlex.dev/
 
 ## Add-ons
 
