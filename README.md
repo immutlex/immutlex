@@ -54,7 +54,7 @@ Your agent can search the web but cannot build a persistent, cross-linked memory
 
 Independent tools that each emit plain markdown ready to drop in. codino and fsgdb emit it already linked (frontmatter plus back-and-forward `[[wikilinks]]`).
 
-- **[defuddle-rs](https://github.com/npiesco/defuddle-rs)** (open source, MIT) -- point it at a URL and it strips the page chrome and returns clean markdown.
+- **[defuddle-rs](https://github.com/immutlex/defuddle-rs)** (open source, MIT) -- point it at a URL and it strips the page chrome and returns clean markdown.
 - **codino** (add-on) -- pulls your Claude Code / Codex / Copilot session logs into linked markdown your agent can ask again.
 - **fsgdb** (add-on) -- maps a codebase (call graphs, blast radius, coverage) into immutlex-compatible markdown.
 
@@ -71,3 +71,4 @@ immutlex is local-first and paid. Usage-based, never per seat.
 - **Enterprise** -- capacity bands, deployed Managed or Hybrid (your S3/ADLS, data never leaves your cloud), plus a fully self-hosted option.
 
 Full details, the demo, and a hosted viewer you can point at your own daemon: **[immutlex.dev](https://immutlex.dev)**
+
