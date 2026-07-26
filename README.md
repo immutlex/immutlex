@@ -36,7 +36,7 @@ Your agent can search the web but cannot build a persistent, cross-linked memory
 ## What it does
 
 - **Immutable knowledge base.** Every document is a content-addressed revision with a full audit trail. Nothing is silently overwritten.
-- **A real knowledge graph.** Documents are nodes; `[[wikilinks]]` are edges. Forward links come from the body, backlinks are generated, and semantic edges are inferred so related docs connect even without an explicit link.
+- **A real knowledge graph.** Documents are nodes, and every edge resolves to one of four kinds. **Explicit** edges are the ones you authored -- the `[[wikilinks]]` in the body plus the backlinks they generate -- frozen into the document's revision and the only kind the graph analytics count. The other three are derived from retrieval and rebuild as the corpus grows: **lexical** (keyword overlap, BM25), **semantic** (embedding cosine similarity), and **implicit** (the two fused with reciprocal-rank fusion). Derived edges connect related documents you never linked by hand, and promoting one writes a real `[[wikilink]]` as a new revision -- turning a derived edge into an authored one.
 - **Fused retrieval.** Semantic plus lexical search merged with reciprocal-rank fusion, plus heading search, backlink search, and graph operations (neighbors, shortest path, community detection, orphan detection).
 - **Multimodal ingest.** Markdown, PDFs, CSVs, images, and any web page. Frontmatter is auto-generated from the filename and body links when missing.
 - **Runs local.** Embedding and OCR models run inside the binary: no download step, no network call at inference time.
