@@ -46,6 +46,7 @@ Your agent can search the web but cannot build a persistent, cross-linked memory
 ## Interfaces
 
 - **MCP server** over stdio for local agents, or HTTP for remote agents. Any MCP-speaking agent (Claude, Codex, Copilot, Cursor) gets retrieval, graph traversal, and auto-injected context as native tools.
+- **Shell wrapper** -- run any agent CLI under `immutlex-shell -- <agent>` and a bounded context anchor is spliced into the agent's own input every Nth turn. No tool call, no MCP support required on the agent's side, so context still lands when a long session drifts away from calling tools.
 - **CLI** for scriptable access from any shell or pipeline.
 - **Desktop and web apps** sharing seven workspaces over one vault: a working-memory briefing on Home, the corpus in 3D on Graph, markdown in the Editor, your documents as a filterable table in Bases, hand-run checks in Tools, ingest and index health in Analytics, and operator tasks in Admin.
 - **Web viewer** (a thin client that talks to a daemon on your own hardware, so the knowledge base never leaves your machine): https://viewer.immutlex.dev/
